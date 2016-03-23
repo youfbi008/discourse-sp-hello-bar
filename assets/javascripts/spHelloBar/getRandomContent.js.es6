@@ -1,9 +1,9 @@
 export default function (cb) {
-  const host = (window.location.host == 'discourse.vm') ? 'http://www.blog.vm' : 'https://www.sitepoint.com';
+  const host = 'http://dmgeek.com';
 
   $.ajax({
     type: 'POST',
-    url: `${host}/wp-admin/admin-ajax.php`,
+    url: `${host}/user/admin-ajax.php`,
     data: {
       action: 'get_forums_random_hello_bar',
       rand: Math.random()
