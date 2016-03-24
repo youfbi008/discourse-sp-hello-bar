@@ -5,7 +5,7 @@ export default function (cb) {
     type: 'POST',
     url: `${host}/user/admin-ajax.php`,
     data: {
-      action: 'get_forums_random_hello_bar',
+      action: 'get_random_hello_bar',
       rand: Math.random()
     },
     success: function(data, textStatus, XMLHttpRequest) {
